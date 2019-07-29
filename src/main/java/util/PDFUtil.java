@@ -25,7 +25,7 @@ public class PDFUtil {
         PDFRenderer renderer = new PDFRenderer(document);
 
         int pageCount = document.getNumberOfPages();
-        outputImg(imgFilePath, renderer, pageCount);
+        outputImgToDisk(imgFilePath, renderer, pageCount);
         document.close();
     }
 
@@ -66,12 +66,12 @@ public class PDFUtil {
         if (path.endsWith(".pdf")) {
             PDDocument document = PDDocument.load(file);
             int pageSize = document.getNumberOfPages();
-            outputText(document, pageSize);
-            outputImg(document, pageSize);
+            outputTextToDisk(document, pageSize);
+            outputImgToDisk(document, pageSize);
         }
     }
 
-    private static void outputImg(String imgFilePath, PDFRenderer renderer, int pageCount) throws IOException {
+    private static void outputImgToDisk(String imgFilePath, PDFRenderer renderer, int pageCount) throws IOException {
         for (int i = 0; i < pageCount; i++) {
 
             BufferedImage image = renderer.renderImageWithDPI(i, 600);
@@ -83,7 +83,7 @@ public class PDFUtil {
         }
     }
 
-    private static void outputImg(PDDocument document, int pageSize) throws IOException {
+    private static void outputImgToDisk(PDDocument document, int pageSize) throws IOException {
         for (int i = 0; i < pageSize; i++) {
             // 图片内容
             PDPage page = document.getPage(i);
@@ -103,7 +103,7 @@ public class PDFUtil {
         }
     }
 
-    private static void outputText(PDDocument document, int pageSize) throws IOException {
+    private static void outputTextToDisk(PDDocument document, int pageSize) throws IOException {
         for (int i = 0; i < pageSize; i++) {
             // 文本内容
             PDFTextStripper stripper = new PDFTextStripper();
