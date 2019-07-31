@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34bf3341-6a2e-47ac-8457-cfc4865b656c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OCRAndPDFBoxDemo" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
+            <state relative-caret-position="675">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -47,15 +48,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/util/PDFUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1175">
-              <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+            <state relative-caret-position="475">
+              <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
               <folding>
-                <element signature="method#extractImgFromPDF#0;class#PDFUtil#0" />
-                <element signature="method#outputImg#0;class#PDFUtil#0" />
-                <element signature="method#outputText#0;class#PDFUtil#0" />
+                <element signature="method#PDFtoImage#0;class#PDFUtil#0" />
+                <element signature="method#GetTextFromPDFArea#0;class#PDFUtil#0" />
               </folding>
             </state>
           </provider>
@@ -161,8 +161,8 @@
         <option value="$PROJECT_DIR$/src/main/java/util/ImageUtil.java" />
         <option value="$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/util/OCRUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/util/PDFUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/OcrRecognizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/PDFUtil.java" />
       </list>
     </option>
   </component>
@@ -267,14 +267,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564132774478" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564532214062" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -303,7 +303,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PDFUtilTest.test_ExtractImgFromPDF">
+  <component name="RunManager" selected="JUnit.OCRUtilTest">
+    <configuration name="OCRUtilTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tess4jTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="util" />
+      <option name="MAIN_CLASS_NAME" value="util.OCRUtilTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OCRUtilTest.testOCRAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tess4jTest" />
       <extension name="coverage">
@@ -346,16 +361,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PDFUtilTest.test_PDFtoImage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tess4jTest" />
-      <option name="PACKAGE_NAME" value="util" />
-      <option name="MAIN_CLASS_NAME" value="util.PDFUtilTest" />
-      <option name="METHOD_NAME" value="test_PDFtoImage" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PdfTest.testPdf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tess4jTest" />
       <option name="PACKAGE_NAME" value="" />
@@ -368,11 +373,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OCRUtilTest" />
         <item itemvalue="JUnit.PDFUtilTest.test_ExtractImgFromPDF" />
         <item itemvalue="JUnit.PdfTest.testPdf" />
         <item itemvalue="JUnit.PDFUtilTest.test_GetTextFromPDFArea" />
         <item itemvalue="JUnit.OCRUtilTest.testOCRAll" />
-        <item itemvalue="JUnit.PDFUtilTest.test_PDFtoImage" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +394,8 @@
       <workItem from="1563956691958" duration="2984000" />
       <workItem from="1564017476202" duration="4300000" />
       <workItem from="1564099761783" duration="17700000" />
-      <workItem from="1564360428532" duration="1039000" />
+      <workItem from="1564360428532" duration="1809000" />
+      <workItem from="1564532104912" duration="86000" />
     </task>
     <servers />
   </component>
@@ -426,13 +432,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26023000" />
+    <option name="totallyTimeSpent" value="26879000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26618123" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -466,6 +471,11 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/OCRAndPDFBoxDemo" />
+    </ignored-roots>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/PDFReader.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/PDF2Image.java" />
@@ -487,14 +497,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/PDFUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="73" column="16" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="16" />
+        <state relative-caret-position="675">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
-            <element signature="method#extractImgFromPDF#0;class#PDFUtil#0" />
-            <element signature="method#outputImg#0;class#PDFUtil#0" />
-            <element signature="method#outputText#0;class#PDFUtil#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -543,12 +551,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/PDFUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="475">
+          <caret line="67" column="55" selection-start-line="67" selection-start-column="55" selection-end-line="67" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#PDFtoImage#0;class#PDFUtil#0" />
+            <element signature="method#GetTextFromPDFArea#0;class#PDFUtil#0" />
           </folding>
         </state>
       </provider>
