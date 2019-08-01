@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34bf3341-6a2e-47ac-8457-cfc4865b656c" name="Default Changelist" comment="" />
+    <list default="true" id="34bf3341-6a2e-47ac-8457-cfc4865b656c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Jframe_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Jframe_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Jframe_1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Jframe_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Jframe_2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jframe_2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Jframe_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Jframe_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +24,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+            <state relative-caret-position="700">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/util/OCRUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,8 +61,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/util/PDFUtilTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="800">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="675">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Jframe_2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-300">
+              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +83,59 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Jframe_2.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ScreenCapture.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="25" />
+            <state relative-caret-position="375">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding>
+                <element signature="method#ScreenCapture#0;class#ScreenCapture#0" />
+                <element signature="class#470:1227" />
+                <element signature="method#mouseClicked#0;class#470:1227" />
+                <element signature="method#mousePressed#0;class#470:1227" />
+                <element signature="e#685#790#1" />
+                <element signature="method#mouseReleased#0;class#470:1227" />
+                <element signature="e#913#1023#1" />
+                <element signature="method#mouseEntered#0;class#470:1227" />
+                <element signature="method#mouseExited#0;class#470:1227" />
+                <element signature="e#1259#1461#0" />
+                <element signature="e#1327#1374#0" />
+                <element signature="e#1398#1451#0" />
+                <element signature="method#layoutInit#0;class#ScreenCapture#0" />
+                <element signature="method#doScreenShot#0;class#ScreenCapture#0" />
+                <element signature="method#screenCapture#0;class#ScreenCapture#0" />
+                <element signature="e#2444#2488#0" />
+                <element signature="e#2512#2612#0" />
+                <element signature="class#3097:4020" />
+                <element signature="method#mouseDragged#0;class#3097:4020" />
+                <element signature="e#3210#3345#1" />
+                <element signature="e#3351#3864#1" />
+                <element signature="docComment;method#captureFullScreen#0;class#ScreenCapture#0" />
+                <element signature="method#captureFullScreen#0;class#ScreenCapture#0" />
+                <element signature="docComment;method#captureImage#0;class#ScreenCapture#0" />
+                <element signature="method#captureImage#0;class#ScreenCapture#0" />
+                <element signature="docComment;method#getPickedImage#0;class#ScreenCapture#0" />
+                <element signature="docComment;method#getPickedIcon#0;class#ScreenCapture#0" />
+                <element signature="docComment;method#saveAsPNG#0;class#ScreenCapture#0" />
+                <element signature="method#saveAsPNG#0;class#ScreenCapture#0" />
+                <element signature="docComment;method#saveAsJPEG#0;class#ScreenCapture#0" />
+                <element signature="method#saveAsJPEG#0;class#ScreenCapture#0" />
+                <element signature="docComment;method#write#0;class#ScreenCapture#0" />
+                <element signature="method#write#0;class#ScreenCapture#0" />
+                <element signature="docComment;class#BackgroundImage#0;class#ScreenCapture#0" />
+                <element signature="class#BackgroundImage#0;class#ScreenCapture#0" />
+                <element signature="method#paintComponent#0;class#BackgroundImage#0;class#ScreenCapture#0" />
+                <element signature="method#drawRectangle#0;class#BackgroundImage#0;class#ScreenCapture#0" />
+                <element signature="method#drawCross#0;class#BackgroundImage#0;class#ScreenCapture#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/awt/event/ActionListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="317">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -61,42 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#63#64#0" expanded="true" />
-                <element signature="e#92#93#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.13/pdfbox-1.8.13.jar!/org/apache/pdfbox/util/PDFTextStripperByArea.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="86" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/util/ImageUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
-              <folding>
-                <element signature="method#tempImageFile#0;class#ImageUtil#0" />
-              </folding>
+            <state relative-caret-position="100">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -128,6 +176,12 @@
       <find>1.5</find>
       <find>PDXObjectImage</find>
       <find>this</find>
+      <find>graphic</find>
+      <find>static</find>
+      <find>mouse</find>
+      <find>recX</find>
+      <find>BUTTON</find>
+      <find>screenshot</find>
     </findStrings>
     <replaceStrings>
       <replace>PDImageXObject</replace>
@@ -164,7 +218,11 @@
         <option value="$PROJECT_DIR$/src/main/java/util/PDFUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jframe_1.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/util/BackgroungImage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BackgroundImage.java" />
         <option value="$PROJECT_DIR$/src/main/java/Jframe_2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ScreenCapture.java" />
       </list>
     </option>
   </component>
@@ -225,6 +283,22 @@
               <item name="Tess4jTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tess4jTest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tess4jTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tess4jTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tess4jTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tess4jTest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,7 +327,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564553823868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564618693869" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
     <property name="extract.method.default.visibility" value="private" />
@@ -270,14 +344,14 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="util" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IPSProject\Tess4jTest\src\main\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IPSProject\Tess4jTest\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,7 +366,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.ScreenCapture">
     <configuration name="Jframe_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Jframe_1" />
       <module name="Tess4jTest" />
@@ -302,6 +376,13 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Tess4jTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScreenCapture" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ScreenCapture" />
       <module name="Tess4jTest" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -322,7 +403,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PDFUtilTest.test_ExtractImgFromPDF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PDFUtilTest.test_GetTextFromPDFArea" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Tess4jTest" />
       <extension name="coverage">
         <pattern>
@@ -332,17 +413,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="util" />
       <option name="MAIN_CLASS_NAME" value="util.PDFUtilTest" />
-      <option name="METHOD_NAME" value="test_ExtractImgFromPDF" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PdfTest.testPdf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Tess4jTest" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PdfTest" />
-      <option name="METHOD_NAME" value="testPdf" />
+      <option name="METHOD_NAME" value="test_GetTextFromPDFArea" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -350,11 +421,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ScreenCapture" />
+        <item itemvalue="JUnit.PDFUtilTest.test_GetTextFromPDFArea" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Jframe_1" />
         <item itemvalue="JUnit.OCRUtilTest" />
-        <item itemvalue="JUnit.PDFUtilTest.test_ExtractImgFromPDF" />
-        <item itemvalue="JUnit.PdfTest.testPdf" />
       </list>
     </recent_temporary>
   </component>
@@ -372,14 +443,12 @@
       <workItem from="1564017476202" duration="4300000" />
       <workItem from="1564099761783" duration="17700000" />
       <workItem from="1564360428532" duration="1809000" />
-      <workItem from="1564532104912" duration="3815000" />
+      <workItem from="1564532104912" duration="12440000" />
+      <workItem from="1564618168178" duration="511000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PDFUtilTest_test_GetTextFromPDFArea - 2019.07.26 at 15h 50m 15s.xml">
-      <configuration name="PDFUtilTest.test_GetTextFromPDFArea" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="PDFUtilTest_test_GetTextFromPDFArea - 2019.07.26 at 15h 50m 54s.xml">
       <configuration name="PDFUtilTest.test_GetTextFromPDFArea" configurationId="JUnit" />
     </history-entry>
@@ -407,14 +476,27 @@
     <history-entry file="OCRUtilTest - 2019.07.31 at 08h 17m 50s.xml">
       <configuration name="OCRUtilTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PDFUtilTest_test_GetTextFromPDFArea - 2019.07.31 at 16h 24m 39s.xml">
+      <configuration name="PDFUtilTest.test_GetTextFromPDFArea" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30608000" />
+    <option name="totallyTimeSpent" value="39744000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26618123" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20307444" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -422,12 +504,12 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298731" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298731" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39907727" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
@@ -464,16 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/util/OCRUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.13/pdfbox-1.8.13.jar!/org/apache/pdfbox/util/PDFTextStripperByArea.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="675">
@@ -498,10 +570,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/OcrRecognizer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Jframe_1.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/BackgroungImage.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/awt/event/MouseListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="185">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/util/PDFUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -519,10 +610,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/OCRUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/OCRUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="31" column="39" lean-forward="true" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        <state relative-caret-position="208">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Test.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/util/BackgroundImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/awt/event/ActionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Jframe_2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -531,39 +652,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#63#64#0" expanded="true" />
-            <element signature="e#92#93#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="100">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Jframe_1.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/OcrRecognizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-892">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="200">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/util/PDFUtilTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ScreenCapture.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="375">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#ScreenCapture#0;class#ScreenCapture#0" />
+            <element signature="class#470:1227" />
+            <element signature="method#mouseClicked#0;class#470:1227" />
+            <element signature="method#mousePressed#0;class#470:1227" />
+            <element signature="e#685#790#1" />
+            <element signature="method#mouseReleased#0;class#470:1227" />
+            <element signature="e#913#1023#1" />
+            <element signature="method#mouseEntered#0;class#470:1227" />
+            <element signature="method#mouseExited#0;class#470:1227" />
+            <element signature="e#1259#1461#0" />
+            <element signature="e#1327#1374#0" />
+            <element signature="e#1398#1451#0" />
+            <element signature="method#layoutInit#0;class#ScreenCapture#0" />
+            <element signature="method#doScreenShot#0;class#ScreenCapture#0" />
+            <element signature="method#screenCapture#0;class#ScreenCapture#0" />
+            <element signature="e#2444#2488#0" />
+            <element signature="e#2512#2612#0" />
+            <element signature="class#3097:4020" />
+            <element signature="method#mouseDragged#0;class#3097:4020" />
+            <element signature="e#3210#3345#1" />
+            <element signature="e#3351#3864#1" />
+            <element signature="docComment;method#captureFullScreen#0;class#ScreenCapture#0" />
+            <element signature="method#captureFullScreen#0;class#ScreenCapture#0" />
+            <element signature="docComment;method#captureImage#0;class#ScreenCapture#0" />
+            <element signature="method#captureImage#0;class#ScreenCapture#0" />
+            <element signature="docComment;method#getPickedImage#0;class#ScreenCapture#0" />
+            <element signature="docComment;method#getPickedIcon#0;class#ScreenCapture#0" />
+            <element signature="docComment;method#saveAsPNG#0;class#ScreenCapture#0" />
+            <element signature="method#saveAsPNG#0;class#ScreenCapture#0" />
+            <element signature="docComment;method#saveAsJPEG#0;class#ScreenCapture#0" />
+            <element signature="method#saveAsJPEG#0;class#ScreenCapture#0" />
+            <element signature="docComment;method#write#0;class#ScreenCapture#0" />
+            <element signature="method#write#0;class#ScreenCapture#0" />
+            <element signature="docComment;class#BackgroundImage#0;class#ScreenCapture#0" />
+            <element signature="class#BackgroundImage#0;class#ScreenCapture#0" />
+            <element signature="method#paintComponent#0;class#BackgroundImage#0;class#ScreenCapture#0" />
+            <element signature="method#drawRectangle#0;class#BackgroundImage#0;class#ScreenCapture#0" />
+            <element signature="method#drawCross#0;class#BackgroundImage#0;class#ScreenCapture#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Jframe_2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>

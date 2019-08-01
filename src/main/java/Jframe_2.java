@@ -2,15 +2,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
 
 public class Jframe_2 extends JFrame {
     private JLabel lb1 = new JLabel("此处显示鼠标点击坐标");
     private JLabel lb2 = new JLabel("此处显示鼠标释放坐标");
+    JButton b1 = new JButton("b1");
 
-    public void init() {
+    public void init() throws IOException {
         layoutInit();
         add(lb1);
         add(lb2);
+        add(b1);
+
         addMouseListener(new MouseListener() {
             @Override
             public void mousePressed(MouseEvent e) {
@@ -21,8 +25,11 @@ public class Jframe_2 extends JFrame {
             }
 
             @Override
-            public void mouseClicked(MouseEvent e) {
+            public void mouseClicked(MouseEvent e){
                 // TODO Auto-generated method stub
+                if(e.getSource().equals(b1)) {
+                   ;
+                }
 
             }
 
@@ -45,7 +52,6 @@ public class Jframe_2 extends JFrame {
                 // TODO Auto-generated method stub
 
             }
-
 
         });
     }
