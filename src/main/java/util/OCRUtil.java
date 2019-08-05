@@ -10,13 +10,15 @@ import java.io.IOException;
 
 public class OCRUtil {
 
+    private static String TESSERACT="C:\\Users\\huangst3\\AppData\\Local\\Tesseract-OCR\\tessdata";
+
     public static void OCRAll(String path, String outputPath) throws IOException, TesseractException {
 
         ITesseract instance = new Tesseract();
 
 //        instance.setTessVariable("tessedit_write_images", "true");
 
-        instance.setDatapath("C:\\Users\\huangst3\\AppData\\Local\\Tesseract-OCR\\tessdata");
+        instance.setDatapath(TESSERACT);
         String result = instance.doOCR(new File(path));
 
 //            System.out.println(result);
@@ -24,7 +26,7 @@ public class OCRUtil {
         FileUtil.doSTOutput(result,outputPath);
     }
 
-
+    @Deprecated
     public static void OCRImg(String path, String outputPath) throws Exception {
         System.out.println("ORC Test Begin......");
         String result = new OcrRecognizer().recognizeText(new File(path), "png");
