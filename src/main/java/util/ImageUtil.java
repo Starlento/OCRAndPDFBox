@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Locale;
 
+@Deprecated
 public class ImageUtil {
 
     public static File createImage(File imageFile, String imageFormat) throws IOException {

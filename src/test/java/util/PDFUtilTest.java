@@ -14,7 +14,6 @@ public class PDFUtilTest extends TestCase {
     };
 
     public void test_PDFtoImage() throws IOException {
-
         /* given */
         String file = pdfPath[0];
         String imgFilePath = "D:\\IPSProject\\RTM E-Invoice\\output\\";
@@ -25,7 +24,6 @@ public class PDFUtilTest extends TestCase {
     }
 
     public void test_GetTextFromPDFArea() throws IOException {
-
         /* given */
         String file = pdfPath[1];
         String outputPath = "D:\\IPSProject\\RTM E-Invoice\\output\\output.txt";

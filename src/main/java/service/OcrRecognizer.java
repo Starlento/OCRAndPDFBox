@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
+@Deprecated
 public class OcrRecognizer {
 
     private final String LANG_OPTION = "-l"; //英文字母小写l，并非数字1

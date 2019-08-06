@@ -12,9 +12,8 @@ public class ScreenCapture {
         new ScreenCapture();
     }
 
-
-    JButton b1 = new JButton("b1");
-    JFrame jf = new JFrame("test");
+    private JButton b1 = new JButton("b1");
+    private JFrame jf = new JFrame("test");
     private int x1;
     private int y1;
     private int x2;
@@ -41,13 +40,13 @@ public class ScreenCapture {
             }
 
             public void mousePressed(MouseEvent evn) {
-                if (evn.getButton() == evn.BUTTON1) { //left
+                if (evn.getButton() == MouseEvent.BUTTON1) { //left
                     System.out.println("pressed:" + evn.getX() + "\t" + evn.getY());
                 }
             }
 
             public void mouseReleased(MouseEvent evn) {
-                if (evn.getButton() == evn.BUTTON1) { //left
+                if (evn.getButton() == MouseEvent.BUTTON1) { //left
                     System.out.println("released:" + evn.getX() + "\t" + evn.getY());
                 }
             }

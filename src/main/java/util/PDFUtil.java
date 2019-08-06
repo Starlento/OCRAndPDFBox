@@ -7,7 +7,6 @@ import org.apache.pdfbox.pdmodel.PDPageTree;
 import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.apache.pdfbox.rendering.PDFRenderer;
-import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
 
 import javax.imageio.ImageIO;
@@ -23,9 +22,8 @@ public class PDFUtil {
     public static void PDFtoImage(String file, String imgFilePath) throws IOException {
         PDDocument document = PDDocument.load(new File(file));
         PDFRenderer renderer = new PDFRenderer(document);
-
         int pageCount = document.getNumberOfPages();
-        outputImgToDisk(imgFilePath, renderer, pageCount);
+        outputImg(imgFilePath, renderer, pageCount);
         document.close();
     }
 
@@ -56,7 +54,7 @@ public class PDFUtil {
 
         document.close();
         /* output the string */
-        FileUtil.doSTOutput(stripper.getTextForRegion("class1"),outputPath);
+        FileUtil.outputTXT(stripper.getTextForRegion("class1"),outputPath);
     }
 
     public static void extractImgFromPDF(String path) throws IOException {
@@ -66,12 +64,12 @@ public class PDFUtil {
         if (path.endsWith(".pdf")) {
             PDDocument document = PDDocument.load(file);
             int pageSize = document.getNumberOfPages();
-            outputTextToDisk(document, pageSize);
-            outputImgToDisk(document, pageSize);
+            FileUtil.outputTXT(document, pageSize);
+            outputImg(document, pageSize);
         }
     }
 
-    private static void outputImgToDisk(String imgFilePath, PDFRenderer renderer, int pageCount) throws IOException {
+    private static void outputImg(String imgFilePath, PDFRenderer renderer, int pageCount) throws IOException {
         for (int i = 0; i < pageCount; i++) {
 
             BufferedImage image = renderer.renderImageWithDPI(i, 600);
@@ -83,9 +81,8 @@ public class PDFUtil {
         }
     }
 
-    private static void outputImgToDisk(PDDocument document, int pageSize) throws IOException {
+    private static void outputImg(PDDocument document, int pageSize) throws IOException {
         for (int i = 0; i < pageSize; i++) {
-            // 图片内容
             PDPage page = document.getPage(i);
             PDResources resources = page.getResources();
             Iterable<COSName> cosNames = resources.getXObjectNames();
@@ -103,17 +100,4 @@ public class PDFUtil {
         }
     }
 
-    private static void outputTextToDisk(PDDocument document, int pageSize) throws IOException {
-        for (int i = 0; i < pageSize; i++) {
-            // 文本内容
-            PDFTextStripper stripper = new PDFTextStripper();
-            // 设置按顺序输出
-            stripper.setSortByPosition(true);
-            stripper.setStartPage(i + 1);
-            stripper.setEndPage(i + 1);
-            String text = stripper.getText(document);
-            System.out.println(text.trim());
-            System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-");
-        }
-    }
 }
