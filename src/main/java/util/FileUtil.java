@@ -19,19 +19,4 @@ public class FileUtil {
         dos1.write(result);
         dos1.close();
     }
-
-    public static void outputTXT(PDDocument document, int pageSize) throws IOException {
-        for (int i = 0; i < pageSize; i++) {
-            // 文本内容
-            PDFTextStripper stripper = new PDFTextStripper();
-            // 设置按顺序输出
-            stripper.setSortByPosition(true);
-            stripper.setStartPage(i + 1);
-            stripper.setEndPage(i + 1);
-            String text = stripper.getText(document);
-            //for testing
-            System.out.println(text.trim());
-            System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-");
-        }
-    }
 }

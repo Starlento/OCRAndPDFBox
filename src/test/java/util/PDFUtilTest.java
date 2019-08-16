@@ -9,7 +9,7 @@ public class PDFUtilTest extends TestCase {
 
     private static String[] pdfPath = {
             "D:\\IPSProject\\RTM E-Invoice\\OOCL Debit.pdf",
-            "D:\\IPSProject\\RTM E-Invoice\\INV5139060899_ORIGINAL.pdf",
+            "D:\\IPSProject\\RTM E-Invoice\\INV_ORIGINAL_5135031199.pdf",
             "D:\\IPSProject\\RTM E-Invoice\\1.pdf"
     };
 
@@ -27,9 +27,10 @@ public class PDFUtilTest extends TestCase {
         /* given */
         String file = pdfPath[1];
         String outputPath = "D:\\IPSProject\\RTM E-Invoice\\output\\output.txt";
-        Rectangle rect = new Rectangle(0, 0, 300, 300);
+        Rectangle rect = new Rectangle(0, 0, 0, 0);
+        String separator = "❤";
         /* when */
-        PDFUtil.GetTextFromPDFArea(file, rect, outputPath);
+        PDFUtil.getTextFromPDFArea(file, rect, outputPath, separator);
         /* then */
 
     }

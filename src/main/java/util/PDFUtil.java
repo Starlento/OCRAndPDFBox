@@ -7,6 +7,7 @@ import org.apache.pdfbox.pdmodel.PDPageTree;
 import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.apache.pdfbox.rendering.PDFRenderer;
+import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
 
 import javax.imageio.ImageIO;
@@ -27,34 +28,17 @@ public class PDFUtil {
         document.close();
     }
 
-    public static void GetTextFromPDFArea(String file, Rectangle rect, String outputPath)
+    public static void getTextFromPDFArea(String file, Rectangle rect, String outputPath, String separator)
             throws IOException
-//            , CryptographyException
     {
         PDDocument document = PDDocument.load(new File(file));
-
-//        if (document.isEncrypted()) {
-//            document.decrypt("");
-//        }
-
-        /* Get text from appointed area */
-        PDFTextStripperByArea stripper = new PDFTextStripperByArea();
-        stripper.setSortByPosition(true);
-        //(x坐标，y坐标，长，宽)
-        stripper.addRegion("class1", rect);
-
-//        List allPages = document.getDocumentCatalog().getAllPages();
-
-        PDPageTree allPages = document.getPages();
-        PDPage firstPage = allPages.get(0);
-        stripper.extractRegions(firstPage);
-
-//        System.out.println( "Text in the area:" + rect );
-//        System.out.println( stripper.getTextForRegion( "class1" ) );
-
-        document.close();
-        /* output the string */
-        FileUtil.outputTXT(stripper.getTextForRegion("class1"),outputPath);
+        /* take rect's height==0 and width==0 request as asking for full page */
+        if (rect.height == 0 && rect.width == 0) {
+            extractFullPage(outputPath, separator, document);
+        }
+        else{
+            extractFromArea(rect, outputPath, separator, document);
+        }
     }
 
     public static void extractImgFromPDF(String path) throws IOException {
@@ -64,9 +48,33 @@ public class PDFUtil {
         if (path.endsWith(".pdf")) {
             PDDocument document = PDDocument.load(file);
             int pageSize = document.getNumberOfPages();
-            FileUtil.outputTXT(document, pageSize);
             outputImg(document, pageSize);
         }
+    }
+
+    private static void extractFromArea(Rectangle rect, String outputPath, String separator, PDDocument document) throws IOException {
+        PDFTextStripperByArea stripper = new PDFTextStripperByArea();
+        stripper.setSortByPosition(false);
+        stripper.setWordSeparator(separator);
+        //(x坐标，y坐标，长，宽)
+        stripper.addRegion("class1", rect);
+//        List allPages = document.getDocumentCatalog().getAllPages()
+        PDPageTree allPages = document.getPages();
+        PDPage firstPage = allPages.get(0);
+        stripper.extractRegions(firstPage);
+        /* output the string */
+        String text = stripper.getTextForRegion("class1");
+        FileUtil.outputTXT(text, outputPath);
+        document.close();
+    }
+
+    private static void extractFullPage(String outputPath, String separator, PDDocument document) throws IOException {
+        PDFTextStripper stripper = new PDFTextStripper();
+        stripper.setSortByPosition(false);
+        stripper.setWordSeparator(separator);
+        String text = stripper.getText(document);
+        FileUtil.outputTXT(text,outputPath);
+        document.close();
     }
 
     private static void outputImg(String imgFilePath, PDFRenderer renderer, int pageCount) throws IOException {
@@ -99,5 +107,4 @@ public class PDFUtil {
             }
         }
     }
-
 }
